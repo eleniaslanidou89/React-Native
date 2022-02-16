@@ -11,8 +11,9 @@ import {
   TouchableOpacity,
   TextInput,
 } from 'react-native'
+import SearchByCityTitle from '../titles/SearchByCityTitle'
 import Searchbar from '../shared/SearchByCity_SearchBar'
-export default function Home() {
+export default function SearchByCity() {
   const [value, setValue] = useState()
   function updateSearch(value) {
     //do your search logic or anything
@@ -20,11 +21,7 @@ export default function Home() {
   }
   return (
     <View style={styles.container}>
-      <Text
-        style={{ marginTop: '15%', marginBottom: '10%', marginLeft: '40%' }}
-      >
-        SEARCH BY CITY
-      </Text>
+      <SearchByCityTitle/>
       <View
         style={{ height: '40%', backgroundColor: '#3F569C', borderRadius: 10 }}
       >
