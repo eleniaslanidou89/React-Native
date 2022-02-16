@@ -14,7 +14,7 @@ export default function App() {
         title="SEARCH BY CITY"
         color="#841584"
       />
-      <Button
+      <Button 
         // onPress={}
         title="SEARCH BY COUNTRY"
         color="#841584"

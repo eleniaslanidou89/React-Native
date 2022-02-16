@@ -26,7 +26,7 @@ export default function Searchbar({ value, updateSearch, style }) {
 
                 <TextInput
                     value={query}
-                    placeholder="Search"
+                    placeholder="Enter a city"
                     style={styles.textInput}
                     onChangeText={(text) => {
                         var letters = /^$|^[a-zA-Z._\b ]+$/;
