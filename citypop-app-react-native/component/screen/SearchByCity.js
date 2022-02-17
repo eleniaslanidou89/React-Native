@@ -12,7 +12,7 @@ import {
   TextInput,
 } from 'react-native'
 import SearchByCityTitle from '../titles/SearchByCityTitle'
-import Searchbar from '../shared/SearchByCity_SearchBar'
+import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
 export default function SearchByCity() {
   const [value, setValue] = useState()
   function updateSearch(value) {
@@ -21,7 +21,7 @@ export default function SearchByCity() {
   }
   return (
     <View style={styles.container}>
-      <SearchByCityTitle/>
+      <SearchByCityTitle />
       <View
         style={{ height: '40%', backgroundColor: '#3F569C', borderRadius: 10 }}
       >
@@ -29,7 +29,7 @@ export default function SearchByCity() {
           style={{ marginTop: '15%', marginLeft: '5%' }}
           source={require('../../assets/images/ic_back.png')}
         />
-        <Searchbar
+        <SearchByCity_SearchBar
           value={value}
           updateSearch={updateSearch}
           style={{ marginTop: '20%' }}

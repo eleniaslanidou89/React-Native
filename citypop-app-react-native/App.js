@@ -1,24 +1,14 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Button, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
+import HomePageTitle from './component/titles/HomePageTitle'
+import SearchByCityButton from './component/screen/SearchByCity'
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text
-        style={{ marginTop: '15%', marginBottom: '10%', marginLeft: '40%' }}
-      >
-        CityPop
-      </Text>
+     <HomePageTitle />
       <StatusBar style="auto" />
-      <Button
-        // onPress={}
-        title="SEARCH BY CITY"
-        color="#841584"
-      />
-      <Button 
-        // onPress={}
-        title="SEARCH BY COUNTRY"
-        color="#841584"
-      />
+      <SearchByCityButton />
+      <SearchByCountryButton />
     </View>
   )
 }
