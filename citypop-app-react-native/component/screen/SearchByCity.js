@@ -16,7 +16,6 @@ import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
 export default function SearchByCity() {
   const [value, setValue] = useState()
   function updateSearch(value) {
-    //do your search logic or anything
     console.log(value)
   }
   return (
@@ -41,6 +40,5 @@ export default function SearchByCity() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: 'red', height: '100%', width: '100%'
   },
 })

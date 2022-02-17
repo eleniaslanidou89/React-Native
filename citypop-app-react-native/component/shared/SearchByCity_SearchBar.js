@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
   View,
   Text,
-  StatusBar,
-  FlatList,
   TouchableOpacity,
   TextInput,
   Image,
@@ -66,7 +62,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   textInput: {
-    // backgroundColor: 'green',
     flex: 1,
   },
 
@@ -74,8 +69,6 @@ const styles = StyleSheet.create({
     flex: 0.2,
     justifyContent: 'center',
     alignItems: 'center',
-    // width: 40,
-    // backgroundColor: 'red'
   },
   icSearch: {
     height: 18,
@@ -91,6 +84,5 @@ const styles = StyleSheet.create({
   container: {
     height: 80,
     alignItems: 'center',
-    // height: '100%', width: '100%'
   },
 })

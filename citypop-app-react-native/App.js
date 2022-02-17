@@ -18,8 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     marginTop: 90,
-    // alignItems: 'center',
-    // justifyContent: 'center',
   },
   searchbar: {
     marginTop: 20,
