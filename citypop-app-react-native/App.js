@@ -1,14 +1,11 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, View } from 'react-native'
-import HomePageTitle from './component/titles/HomePageTitle'
-import SearchByCityButton from './component/screen/SearchByCity'
+import Navigator from './routes/homeStack'
+
 export default function App() {
   return (
     <View style={styles.container}>
-     <HomePageTitle />
-      <StatusBar style="auto" />
-      <SearchByCityButton />
-      <SearchByCountryButton />
+      <Navigator />
     </View>
   )
 }
