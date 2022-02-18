@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { StyleSheet, View, Image } from 'react-native'
-import SearchByCityTitle from '../titles/SearchByCityTitle'
-import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
+import SearchByCountryTitle from '../titles/SearchByCountryTitle'
+import SearchByCountry_SearchBar from '../shared/SearchByCountry_SearchBar'
 import BackButton from '../buttons/BackButton'
 
-export default function SearchByCity() {
+export default function SearchByCountry() {
   const [value, setValue] = useState()
   function updateSearch(value) {
     console.log(value)
@@ -12,7 +12,7 @@ export default function SearchByCity() {
   return (
     <View style={styles.container}>
       <BackButton />
-      <SearchByCityTitle />
+      <SearchByCountryTitle />
       <View
         style={{ height: '40%', backgroundColor: '#3F569C', borderRadius: 10 }}
       >
@@ -20,7 +20,7 @@ export default function SearchByCity() {
           style={{ marginTop: '15%', marginLeft: '5%' }}
           source={require('../../assets/images/ic_back.png')}
         />
-        <SearchByCity_SearchBar
+        <SearchByCountry_SearchBar
           value={value}
           updateSearch={updateSearch}
           style={{ marginTop: '20%' }}
