@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native'
 
-export default function SearchByCity_SearchBar({ value, updateSearch, style }) {
+export default function SearchByCountry_SearchBar({ value, updateSearch, style }) {
   const [query, setQuery] = useState()
   const [error, setError] = useState()
   return (
@@ -22,7 +22,7 @@ export default function SearchByCity_SearchBar({ value, updateSearch, style }) {
         </View>
         <TextInput
           value={query}
-          placeholder="Enter a city"
+          placeholder="Enter a country"
           style={styles.textInput}
           onChangeText={(text) => {
             var letters = /^$|^[a-zA-Z._\b ]+$/

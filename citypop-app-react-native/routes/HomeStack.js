@@ -1,14 +1,18 @@
 import { createStackNavigator }from 'react-navigation-stack'
 import { createAppContainer } from 'react-navigation'
 import Home from './screen/Home'
-import ReviewDetails from './screen/ReviewDetails'
+import SearchByCity from '../component/screen/SearchByCity'
+import SearchByCountry from '../component/screen/SearchByCountry'
 
 const screens = {
     Home: {
         screen: Home
     },
-    ReviewDetails: {
-        screen: ReviewDetails
+    SearchByCity: {
+        screen: SearchByCity
+    },
+    SearchByCountry: {
+        screen: SearchByCountry
     }
 }
 
