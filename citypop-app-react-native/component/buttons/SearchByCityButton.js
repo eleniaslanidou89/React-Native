@@ -1,13 +1,9 @@
 import React from 'react'
 import { View, Button } from 'react-native'
 
-export default function SearchByCityTitle({ navigation }) {
-
-  const pressHandlerCity = () => {
-    //navigation.navigate('ReviewDetails')
-    navigation.push('ReviewDetails')
-  }
-
+export default function SearchByCityButton({ navigation }) {
+  const pressHandlerCity = () => {}
+  navigation.navigate('SearchByCity')
   return (
     <View style={styles.container}>
       <Button

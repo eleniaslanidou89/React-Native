@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, View } from 'react-native'
 import HomePageTitle from './component/titles/HomePageTitle'
 import SearchByCityButton from './component/screen/SearchByCity'
+import SearchByCountryButton from './component/screen/SearchByCountry'
 
 export default function App() {
   return (
