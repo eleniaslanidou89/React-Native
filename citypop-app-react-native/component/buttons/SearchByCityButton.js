@@ -9,7 +9,7 @@ export default function SearchByCityButton({ navigation }) {
       <Button
         onPress={pressHandlerCity}
         title="SEARCH BY CITY"
-        color="#841584"
+        color="violet"
       />
     </View>
   )

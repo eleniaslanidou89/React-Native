@@ -9,7 +9,7 @@ export default function SearchByCountryButton({ navigation }) {
       <Button
         onPress={pressHandlerCountry}
         title="SEARCH BY COUNTRY"
-        color="#841584"
+        color="violet"
       />
     </View>
   )

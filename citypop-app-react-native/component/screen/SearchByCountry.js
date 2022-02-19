@@ -14,7 +14,7 @@ export default function SearchByCountry() {
       <BackButton />
       <SearchByCountryTitle />
       <View
-        style={{ height: '40%', backgroundColor: '#3F569C', borderRadius: 10 }}
+        style={{ height: '40%', backgroundColor: 'moccasin', borderRadius: 10 }}
       >
         <Image
           style={{ marginTop: '15%', marginLeft: '5%' }}

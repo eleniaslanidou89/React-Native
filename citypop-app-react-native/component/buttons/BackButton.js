@@ -12,7 +12,7 @@ export default function BackButton({ navigation }) {
       <Button
         onPress={pressHandlerBack}
         title="CityPop"
-        color="#841584"
+        color="royalblue "
       />
     </View>
   )
