@@ -1,8 +1,8 @@
-import { createStackNavigator }from 'react-navigation-stack'
+import { createStackNavigator } from 'react-navigation-stack'
 import { createAppContainer } from 'react-navigation'
 import Home from './screen/Home'
-import SearchByCity from '../component/screen/SearchByCity'
-import SearchByCountry from '../component/screen/SearchByCountry'
+import SearchByCity from './component/screen/SearchByCity'
+import SearchByCountry from './component/screen/SearchByCountry'
 
 const screens = {
     Home: {
@@ -13,9 +13,9 @@ const screens = {
     },
     SearchByCountry: {
         screen: SearchByCountry
-    }
+    },
 }
 
-const HomeStack = createStackNavigator(screen)
+const HomeStack = createStackNavigator(screens)
 
 export default createAppContainer(HomeStack)

@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, View } from 'react-native'
-import Navigator from './routes/homeStack'
+import Navigator from '../citypop-app-react-native/routes/HomeStack'
 
 export default function App() {
   return (

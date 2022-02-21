@@ -4,7 +4,7 @@ import HomePageTitle from './component/titles/HomePageTitle'
 import SearchByCityButton from './component/screen/SearchByCity'
 import SearchByCountryButton from './component/screen/SearchByCountry'
 
-export default function App() {
+export default function Home() {
   return (
     <View style={styles.container}>
      <HomePageTitle />
