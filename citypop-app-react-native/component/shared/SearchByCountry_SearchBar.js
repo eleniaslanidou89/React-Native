@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native'
 
-export default function SearchByCountry_SearchBar({ value, updateSearch, style }) {
+export default function SearchByCountry_SearchBar({ value, updateSearch, style, }) {
   const [query, setQuery] = useState()
   const [error, setError] = useState()
   return (

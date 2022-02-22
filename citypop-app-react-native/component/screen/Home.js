@@ -7,7 +7,7 @@ import SearchByCountryButton from './component/screen/SearchByCountry'
 export default function Home() {
   return (
     <View style={styles.container}>
-     <HomePageTitle />
+      <HomePageTitle />
       <StatusBar style="auto" />
       <SearchByCityButton />
       <SearchByCountryButton />
