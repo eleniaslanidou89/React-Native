@@ -3,6 +3,7 @@ import { StyleSheet, View } from 'react-native'
 import SearchByCityTitle from '../titles/SearchByCityTitle'
 import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
 import BackButton from '../buttons/BackButton'
+import {API_KEY} from '../../.env'
 
 export default function SearchByCity() {
   const [isLoading, setLoading] = useState(true)
@@ -15,7 +16,7 @@ export default function SearchByCity() {
   }
   useEffect(() => {
     const fetchApiCall = () => {
-      fetch('http://api.geonames.org/search?tag=skiresort@marc', {
+      fetch('API_KEY', {
         method: 'GET',
         headers: {
           username: 'demo',
