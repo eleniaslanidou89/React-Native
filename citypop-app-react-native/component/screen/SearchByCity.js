@@ -3,7 +3,8 @@ import { StyleSheet, View } from 'react-native'
 import SearchByCityTitle from '../titles/SearchByCityTitle'
 import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
 import BackButton from '../buttons/BackButton'
-import {API_KEY} from '../../.env'
+import {API_URL} from '../../.env'
+import {API_username} from '../../.env'
 
 export default function SearchByCity() {
   const [isLoading, setLoading] = useState(true)
@@ -16,10 +17,10 @@ export default function SearchByCity() {
   }
   useEffect(() => {
     const fetchApiCall = () => {
-      fetch('API_KEY', {
+      fetch('API_URL', {
         method: 'GET',
         headers: {
-          username: 'demo',
+          username: 'API_username',
         },
       })
         .then((response) => response.json())
