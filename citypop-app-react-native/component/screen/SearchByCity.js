@@ -5,22 +5,26 @@ import SearchByCity_SearchBar from '../shared/SearchByCity_SearchBar'
 import BackButton from '../buttons/BackButton'
 import {API_URL} from '../../.env'
 import {API_username} from '../../.env'
+import base64 from 'react-native-base64'
 
 export default function SearchByCity() {
   const [isLoading, setLoading] = useState(true)
   const [quote, setQuote] = React.useState('')
   const [source, setSource] = React.useState('')
+  const [city, setCity] = useState('')
 
   const [value, setValue] = useState()
   function updateSearch(value) {
     console.log(value)
   }
   useEffect(() => {
-    const fetchApiCall = () => {
-      fetch('API_URL', {
+    //const fetchApiCall = () =>
+     //{
+      const API_username_b64= base64.encode(API_username)
+      fetch(API_URL+'search?q='+ city, {
         method: 'GET',
         headers: {
-          username: 'API_username',
+          Authorization: basic + ' ' + API_username_b64,
         },
       })
         .then((response) => response.json())
@@ -32,7 +36,7 @@ export default function SearchByCity() {
           console.log(err)
         })
         .finally(() => setLoading(false))
-    }
+    //}
   })
 
   return (
@@ -43,7 +47,7 @@ export default function SearchByCity() {
         style={{ height: '40%', backgroundColor: 'moccasin', borderRadius: 10 }}
       >
         <SearchByCity_SearchBar
-          value={value}
+          value={setCity(value)}
           updateSearch={updateSearch}
           style={{ marginTop: '20%' }}
         />
